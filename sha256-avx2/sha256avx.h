@@ -72,7 +72,18 @@ typedef struct SHA256state {
 
 
 void transpose(u256 s[8]);
+void sha256_init_frombytes_x8(sha256ctx *ctx, uint8_t *s, unsigned long long msglen);
 void sha256_init8x(sha256ctx *ctx);
+void sha256_update8x(sha256ctx *ctx, 
+                     const unsigned char *d0,
+                     const unsigned char *d1,
+                     const unsigned char *d2,
+                     const unsigned char *d3,
+                     const unsigned char *d4,
+                     const unsigned char *d5,
+                     const unsigned char *d6,
+                     const unsigned char *d7,
+                     unsigned long long len);
 void sha256_final8x(sha256ctx *ctx,
                     unsigned char *out0,
                     unsigned char *out1,
@@ -83,14 +94,7 @@ void sha256_final8x(sha256ctx *ctx,
                     unsigned char *out6,
                     unsigned char *out7);
 
-void sha256_transform8x(sha256ctx *ctx,
-        const unsigned char *data0,
-        const unsigned char *data1,
-        const unsigned char *data2,
-        const unsigned char *data3,
-        const unsigned char *data4,
-        const unsigned char *data5,
-        const unsigned char *data6,
-        const unsigned char *data7);
+void sha256_transform8x(sha256ctx *ctx, const unsigned char *data);
+
 
 #endif
