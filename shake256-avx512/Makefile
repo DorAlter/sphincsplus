@@ -1,5 +1,5 @@
 CC = /usr/bin/gcc
-CFLAGS = -Wall -Wextra -Wpedantic -O3 -mavx512f -mavx512bw -mavx512cd -ffast-math -std=c99 -march=native -fomit-frame-pointer -flto
+CFLAGS = -Wall -Wextra -Wpedantic -O3 -mavx512f -mavx512bw -mavx512cd -mavx512vl -ffast-math -std=c99 -march=native -fomit-frame-pointer -flto
 
 THASH = simple
 

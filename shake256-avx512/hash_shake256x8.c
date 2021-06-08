@@ -61,7 +61,7 @@ void prf_addrx8(unsigned char *out0,
     }
 
     KeccakP1600times8_PermuteAll_24rounds(&state[0]);
-    __m256i_u take1, take2;
+    __m256i take1, take2;
         for (int i = 0; i < SPX_N/8; i++) {
             
             (take1) = _mm512_extracti64x4_epi64(state[i],0);
