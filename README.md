@@ -1,6 +1,6 @@
 ## SPHINCS+ ![][test-ref] ![][test-sha256-avx2] ![][test-shake256-avx2] ![][test-haraka-aesni]
 
-### For the AVX-512 impelmentation go to the avx-512 impelemntation 
+### For the AVX-512 impelmentation go to the avx-512 impelemntation branch.
 
 [test-ref]: https://github.com/sphincs/sphincsplus/workflows/test-ref/badge.svg
 [test-sha256-avx2]: https://github.com/sphincs/sphincsplus/workflows/test-sha256-avx2/badge.svg
